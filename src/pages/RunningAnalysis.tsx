@@ -1,21 +1,28 @@
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 
 export default function RunningAnalysis() {
   const location = useLocation();
+  const navigate = useNavigate();
   const fromFAQ = location.state?.from === 'faq';
+
+  const handleBack = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate(-1);
+  };
 
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-4 py-16">
-        <Link 
-          to={fromFAQ ? "/faq" : "/#services"}
+        <a 
+          href={fromFAQ ? "/faq" : "/#services"}
+          onClick={handleBack}
           className="inline-flex items-center text-[#B47B84] hover:text-[#9D6B73] mb-8"
         >
           <ArrowLeft className="h-5 w-5 mr-2" />
           Back to {fromFAQ ? "FAQ" : "Services"}
-        </Link>
+        </a>
         
         <h1 className="text-4xl font-bold mb-8">Running Analysis</h1>
         

@@ -1,12 +1,21 @@
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export default function MassageTherapy() {
+  const navigate = useNavigate();
+
+  const handleBack = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate(-1);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-4 py-16">
         <a 
-          href="/#services" 
+          href="/#services"
+          onClick={handleBack}
           className="inline-flex items-center text-[#B47B84] hover:text-[#9D6B73] mb-8"
         >
           <ArrowLeft className="h-5 w-5 mr-2" />
