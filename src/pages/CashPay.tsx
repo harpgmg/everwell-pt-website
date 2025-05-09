@@ -1,18 +1,26 @@
 import React from 'react';
 import { ArrowLeft, CheckCircle, AlertCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function CashPay() {
+  const navigate = useNavigate();
+
+  const handleBack = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate(-1);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-4 py-16">
-        <Link 
-          to="/"
+        <a 
+          href="/"
+          onClick={handleBack}
           className="inline-flex items-center text-[#B47B84] hover:text-[#9D6B73] mb-8"
         >
           <ArrowLeft className="h-5 w-5 mr-2" />
           Back to Home
-        </Link>
+        </a>
         
         <h1 className="text-4xl font-bold mb-8">Cash-Pay</h1>
         
