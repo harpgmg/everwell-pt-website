@@ -58,7 +58,7 @@ export default function Bio() {
 
           <h2 className="text-2xl font-semibold mb-4">Beyond the Clinic</h2>
           <p className="text-gray-600 mb-6">
-            When I'm not treating patients, you'll find me staying active in the beautiful Utah outdoors. I enjoy running, hiking, and spending time with my family. I'm also committed to continuous learning and regularly attend professional development courses to bring the latest therapeutic techniques to my practice.
+            When I'm not treating patients, you'll find me staying active in the beautiful Utah outdoors. I enjoy working out, swimming, boating, and spending time with my family. I'm also committed to continuous learning and regularly attend professional development courses to bring the latest therapeutic techniques to my practice.
           </p>
 
           <div className="mt-12 flex flex-col items-center space-y-4">
