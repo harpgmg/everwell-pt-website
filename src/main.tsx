@@ -10,6 +10,7 @@ import RunningAnalysis from './pages/RunningAnalysis.tsx'
 import CashPay from './pages/CashPay.tsx'
 import FAQ from './pages/FAQ.tsx'
 import Resources from './pages/Resources.tsx'
+import Bio from './pages/Bio.tsx'
 import ScrollToTop from './ScrollToTop.tsx'
 import './index.css'
 
@@ -92,6 +93,15 @@ const router = createBrowserRouter([
       <>
         <ScrollToTop />
         <Resources />
+      </>
+    ),
+  },
+  {
+    path: '/bio',
+    element: (
+      <>
+        <ScrollToTop />
+        <Bio />
       </>
     ),
   },
