@@ -159,12 +159,18 @@ function App() {
         <section id="about" className="py-20">
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
+              <div className="flex flex-col items-center">
                 <img
                   src="/headshot.jpg"
                   alt="Physical Therapist"
-                  className="rounded-2xl shadow-lg"
+                  className="rounded-2xl shadow-lg mb-6"
                 />
+                <Link 
+                  to="/bio"
+                  className="text-[#B47B84] hover:text-[#9D6B73] font-medium transition-colors"
+                >
+                  Learn More About Me
+                </Link>
               </div>
               <div>
                 <h2 className="text-3xl font-bold mb-6">Welcome to Everwell PT</h2>
