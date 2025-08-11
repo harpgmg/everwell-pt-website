@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  
+  <url>
+    <loc>https://everwellpt.com/</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://everwellpt.com/hero.jpg</image:loc>
+      <image:title>Everwell PT Physical Therapy Syracuse Utah</image:title>
+      <image:caption>Professional physical therapy services in Syracuse, Utah</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://everwellpt.com/bio</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://everwellpt.com/headshot.jpg</image:loc>
+      <image:title>Jen - Licensed Physical Therapist</image:title>
+      <image:caption>Meet Jen, licensed physical therapist and owner of Everwell PT</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://everwellpt.com/dry-needling</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://everwellpt.com/dry-needling.jpg</image:loc>
+      <image:title>Dry Needling Therapy Syracuse Utah</image:title>
+      <image:caption>Professional dry needling therapy services</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://everwellpt.com/cupping-therapy</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://everwellpt.com/cupping-therapy.jpg</image:loc>
+      <image:title>Cupping Therapy Syracuse Utah</image:title>
+      <image:caption>Professional cupping therapy services</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://everwellpt.com/running-analysis</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://everwellpt.com/running-analysis.jpg</image:loc>
+      <image:title>Running Analysis Syracuse Utah</image:title>
+      <image:caption>Professional running form analysis services</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://everwellpt.com/massage-therapy</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://everwellpt.com/massage-therapy.jpg</image:loc>
+      <image:title>Massage Therapy Syracuse Utah</image:title>
+      <image:caption>Therapeutic massage services</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://everwellpt.com/electrical-stimulation</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://everwellpt.com/electric-stimulation.jpg</image:loc>
+      <image:title>Electrical Stimulation Therapy Syracuse Utah</image:title>
+      <image:caption>E-Stim therapy services</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://everwellpt.com/cash-pay</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://everwellpt.com/faq</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://everwellpt.com/resources</loc>
+    <lastmod>2025-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>

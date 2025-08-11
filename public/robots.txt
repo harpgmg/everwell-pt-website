@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://everwellpt.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Block access to admin areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+
+# Allow important pages
+Allow: /
+Allow: /bio
+Allow: /dry-needling
+Allow: /cupping-therapy
+Allow: /running-analysis
+Allow: /massage-therapy
+Allow: /electrical-stimulation
+Allow: /cash-pay
+Allow: /faq
+Allow: /resources

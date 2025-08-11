@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm fixed w-full z-50">
+      <nav className="bg-white shadow-sm fixed w-full z-50" role="navigation" aria-label="Main navigation">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
@@ -45,6 +45,8 @@ function App() {
                 <img 
                   src="/logo.png" 
                   alt="Everwell PT" 
+                  width="120"
+                  height="48"
                   className="h-12"
                 />
               </Link>
@@ -124,11 +126,13 @@ function App() {
       {/* Add top padding to account for fixed nav */}
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="relative">
+        <section className="relative" role="banner">
           <div className="absolute inset-0">
             <img
               src="/hero.jpg"
               alt="Physical Therapy"
+              width="1920"
+              height="1080"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#B47B84]/60 to-[#D2C1BD]/60"></div>
@@ -156,13 +160,16 @@ function App() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-20">
+        <section id="about" className="py-20" role="main">
+          <h2 className="sr-only">About Everwell PT</h2>
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="flex flex-col items-center">
                 <img
                   src="/headshot.jpg"
                   alt="Physical Therapist"
+                  width="400"
+                  height="400"
                   className="rounded-2xl shadow-lg mb-6"
                 />
                 <Link 
@@ -194,9 +201,9 @@ function App() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="py-20">
+        <section id="services" className="py-20" role="region" aria-labelledby="services-heading">
           <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-4">Therapy Services</h2>
+            <h2 id="services-heading" className="text-3xl font-bold text-center mb-4">Therapy Services</h2>
             <p className="text-gray-600 text-center mb-6 max-w-2xl mx-auto">We provide a full range of physical therapy and wellness services designed to support recovery, improve movement, and promote long term health. As a cash pay practice, our care is free from insurance limitations, allowing us to focus entirely on what you need, when you need it. Whether you are healing from injury, working on prevention, or striving to perform at your best, our services are tailored just for you.</p>
             <div className="flex justify-center mb-16">
               <Link to="/cash-pay" className="bg-[#B47B84] text-white px-8 py-3 rounded-full hover:bg-[#9D6B73] transition shadow-md">
@@ -211,6 +218,8 @@ function App() {
                   <img
                     src="/core-rehabilitation-service.png"
                     alt="Core Rehabilitation"
+                    width="500"
+                    height="300"
                     className="rounded-2xl shadow-lg w-full h-[300px] object-cover"
                   />
                 </div>
@@ -257,6 +266,8 @@ function App() {
                   <img
                     src="/sport-rehabilitation-service.jpg"
                     alt="Sports Rehabilitation"
+                    width="500"
+                    height="300"
                     className="rounded-2xl shadow-lg w-full h-[300px] object-cover"
                   />
                 </div>
@@ -300,6 +311,8 @@ function App() {
                   <img
                     src="/electrical-stim-service.jpg"
                     alt="Adjunct Modalities"
+                    width="500"
+                    height="300"
                     className="rounded-2xl shadow-lg w-full h-[300px] object-cover"
                   />
                 </div>
@@ -358,6 +371,8 @@ function App() {
                   <img
                     src="/flexible-care-service.jpg"
                     alt="Flexible Care Delivery"
+                    width="500"
+                    height="300"
                     className="rounded-2xl shadow-lg w-full h-[300px] object-cover"
                   />
                 </div>
@@ -390,9 +405,9 @@ function App() {
         </section>
 
         {/* Service Areas Section */}
-        <section className="py-20 bg-[#D2C1BD]/5">
+        <section className="py-20 bg-[#D2C1BD]/5" role="region" aria-labelledby="service-areas-heading">
           <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8">Service Areas</h2>
+            <h2 id="service-areas-heading" className="text-3xl font-bold text-center mb-8">Service Areas</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-2xl shadow-sm">
                 <h3 className="text-xl font-semibold text-[#B47B84] mb-4">In-Clinic Treatment</h3>
@@ -433,11 +448,11 @@ function App() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-20 bg-[#D2C1BD]/10">
+        <section id="contact" className="py-20 bg-[#D2C1BD]/10" role="region" aria-labelledby="contact-heading">
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
+                <h2 id="contact-heading" className="text-3xl font-bold mb-6">Get in Touch</h2>
                 <div className="space-y-6">
                   <a 
                     href="https://maps.google.com/?q=1522+W.+Barber+Ln.+Syracuse,+UT+84075"
@@ -483,12 +498,14 @@ function App() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-[#D2C1BD]/10 py-8">
+        <footer className="bg-[#D2C1BD]/10 py-8" role="contentinfo">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <img 
                 src="/logo-circle.png" 
                 alt="Everwell PT" 
+                width="32"
+                height="32"
                 className="h-8"
               />
               <div className="flex items-center gap-6">
