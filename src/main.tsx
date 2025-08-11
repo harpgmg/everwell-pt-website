@@ -107,6 +107,19 @@ const router = createBrowserRouter([
   },
 ])
 
+// GitHub Pages SPA support
+function handleGitHubPagesSPA() {
+  const search = window.location.search;
+  if (search) {
+    const query = new URLSearchParams(search);
+    const redirect = query.get('redirect') || query.get('/');
+    if (redirect) {
+      const newUrl = redirect.replace(/~and~/g, '&');
+      window.history.replaceState(null, '', newUrl);
+    }
+  }
+}
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RouterProvider router={router} />
