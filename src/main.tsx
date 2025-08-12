@@ -120,6 +120,9 @@ function handleGitHubPagesSPA() {
   }
 }
 
+// Handle GitHub Pages SPA routing before React renders
+handleGitHubPagesSPA();
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RouterProvider router={router} />
