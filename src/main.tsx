@@ -14,21 +14,17 @@ import Bio from './pages/Bio.tsx'
 import ScrollToTop from './ScrollToTop.tsx'
 import './index.css'
 
-// GitHub Pages SPA support
-function handleGitHubPagesSPA() {
-  const search = window.location.search;
-  if (search) {
-    const query = new URLSearchParams(search);
-    const redirect = query.get('redirect') || query.get('/');
-    if (redirect) {
-      const newUrl = redirect.replace(/~and~/g, '&');
-      window.history.replaceState(null, '', newUrl);
-    }
+// GitHub Pages SPA support - handle redirected URLs
+(function(l) {
+  if (l.search[1] === '/' ) {
+    var decoded = l.search.slice(1).split('&').map(function(s) { 
+      return s.replace(/~and~/g, '&')
+    }).join('?');
+    window.history.replaceState(null, null,
+        l.pathname.slice(0, -1) + decoded + l.hash
+    );
   }
-}
-
-// Handle GitHub Pages SPA routing before React renders
-handleGitHubPagesSPA();
+}(window.location))
 
 const router = createBrowserRouter([
   {
